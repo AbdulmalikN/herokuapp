@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 3%;
+  margin-top: 20px;
+}
+
+table > thead > tr > th {
+  padding: 2%;
+  font-size: 22px;
+}
+
+#result > tr > td {
+  padding: 2px 5px;
+}
+
+#result > tr > :nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#result > tr > :nth-child(4) > :first-child {
+  width: 48%;
+  background: rgba(44, 173, 108, 0.733);
+  border: none;
+  border-radius: 3px;
+  padding: 1%;
+  color: #fff;
+}
+
+#result > tr > :nth-child(4) > :first-child:active {
+  background: rgba(46, 156, 103, 0.733);
+}
+
+#result > tr > :nth-child(4) > :last-child {
+  width: 48%;
+  background: rgba(245, 12, 12, 0.733);
+  border: none;
+  border-radius: 3px;
+  padding: 1%;
+  color: #fff;
+}
+
+#result > tr > :nth-child(4) > :last-child:active {
+  background: rgba(184, 46, 46, 0.733);
+}
+
+#send > input {
+  width: 180px;
+  height: 30px;
+  padding: 4px;
+  outline: none;
+  background: none;
+  border: 1px solid #171717;
+}
+
+#send > :last-child {
+  width: 100px;
+  padding: 4px;
+  border: none;
+  border-radius: 3px;
+  background: rgb(93, 199, 146);
+  color: #fff;
+}
+
+#send > :last-child:active {
+  background: rgb(39, 138, 88);
+}
